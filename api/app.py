@@ -3,6 +3,10 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 app = FastAPI()
 
+@app.get("/")
+async def root():
+    return {"message": "Webhook is running"}
+
 @app.post("/api/whatsapp")
 async def whatsapp_webhook(Body: str = Form(...)):
     resp = MessagingResponse()
