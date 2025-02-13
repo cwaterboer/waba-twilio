@@ -4,8 +4,8 @@
       { "src": "/api/.*", "dest": "/api/app.py" }
     ],
     "functions": {
-      "api/main.py": {
+      "api/app.py": {
         "runtime": "python3.9"
       }
     }
-  }git
+  }
